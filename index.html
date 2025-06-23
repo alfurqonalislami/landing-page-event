@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Booth Al-Furqon Gresik</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/alfurqon-logo.png" type="image/x-icon">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Cairo', sans-serif;
+      background: linear-gradient(to bottom right, #f0fff0, #e0f5e9);
+      color: #2c3e50;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      animation: fadeIn 1s ease-in;
+      text-align: center;
+      padding: 1.5rem;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 2rem;
+    }
+
+    .alfurqon-img {
+      width: 100px;
+      height: auto;
+    }
+
+    .halal-mrkt-img {
+      width: 250px;
+      height: auto;
+    }
+
+    header img {
+      max-width: 100%;
+      transition: transform 0.3s ease;
+    }
+
+    header img:hover {
+      transform: scale(1.05);
+    }
+
+    h1 {
+      font-size: 1.8rem;
+      margin: 1rem 0 0.5rem;
+      color: #1b5e20;
+    }
+
+    h2 {
+      font-size: 1.1rem;
+      color: #388e3c;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .button-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .btn, .btn-google-play {
+      width: 200px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+      font-weight: bold;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    .btn {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding-block: 0.2rem;
+    }
+
+    .btn:hover {
+      background-color: #43a047;
+      transform: scale(1.05);
+    }
+
+    .btn-google-play {
+      background-color: transparent;
+      padding: 0;
+      border: none;
+    }
+
+    .btn-google-play img {
+      width: 200px;
+      height: auto;
+      border-radius: 5px;
+      transition: transform 0.3s ease;
+    }
+
+    .btn-google-play img:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      margin-top: 2rem;
+      font-size: 0.8rem;
+      color: #777;
+    }
+
+    @media (min-width: 600px) {
+      h1 {
+        font-size: 2.2rem;
+      }
+
+      p {
+        font-size: 1.1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img class="alfurqon-img" src="assets/alfurqon-logo.png" alt="Logo Al-Furqon Gresik">
+    <img class="halal-mrkt-img" src="assets/halal-mrkt-nobg.png" alt="Logo Halal Market">
+  </header>
+
+  <main>
+    <h1>Selamat Datang di Booth Al-Furqon Al-Islami Gresik</h1>
+    <h2>Bagian dari HALAL MRKT 5</h2>
+
+    <p>Yuk, bergabung dalam pembelajaran Islam secara mendasar, sistematis, dan terstruktur di <strong>Batch 4 e-Taklim</strong> untuk memperdalam pemahaman agama dengan cara yang mudah dan terarah!</p>
+
+    <!-- Tombol Aksi -->
+    <div class="button-wrapper">
+      <a href="https://e-taklim.id/pendaftaran" class="btn" target="_blank"><img src="assets/e-taklim.png" alt="Logo e-Taklim" style="max-width: 25%; height: auto;"></span> Daftar e-Taklim.id</a>
+
+      <a href="#" target="_blank" class="btn-google-play">
+        <img src="assets/google-play.svg" alt="Unduh di Google Play">
+      </a>
+    </div>
+  </main>
+
+  <footer>
+    © 2025 Al-Furqon Gresik Al-Islami
+  </footer>
+</body>
+</html>
